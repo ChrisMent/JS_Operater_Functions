@@ -4,6 +4,9 @@ function check(){
     let input = document.getElementById("age")
     let age = input.value
 
+
+
+// Kino Kasse
   
     // < 6 Jahre oder > 60 --> Sonderpreis 4€
 
@@ -21,8 +24,29 @@ function check(){
         alert("Der Ticketpreis beträgt 6.50€")
 
     }
-
-
-
-
 }
+
+function check1(){
+
+// Blitzer 
+
+    let inputSpeed = document.getElementById("speed")
+    let speed = parseInt(inputSpeed.value)
+    
+    let inputDir = document.getElementById("dir")
+    let isFacing = inputDir.checked
+
+    let maxSpeed = document.getElementById("speedLimit")
+    let speedLimit = parseInt(maxSpeed.value)
+    let tolerance = speedLimit * 1.1
+
+
+    
+
+if(speed > tolerance && isFacing == true){
+    alert("Du wurdest geblitzt")
+    }
+
+    
+}
+
